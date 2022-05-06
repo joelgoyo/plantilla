@@ -1,0 +1,529 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+
+/*SLIDEBAR */
+.main-menu.menu-light .navigation>li.open:not(.menu-item-closing)>a,
+.main-menu.menu-light .navigation>li.sidebar-group-active>a {
+    background: transparent linear-gradient(80deg, #EBAAFF 0%, #9E95F5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.main-menu.menu-light .navigation>li.open:not(.menu-item-closing)>a,
+.main-menu.menu-light .navigation>li.sidebar-group-active>a {
+    color: #fff;
+}
+
+
+.progresscircle {
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+
+.progresscircle:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #2f2d42;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progresscircle>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progresscircle .progress-left {
+    left: 0;
+}
+
+.progresscircle .progress-circle {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progresscircle .progress-left .progress-circle {
+    left: 100%;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progresscircle .progress-right {
+    right: 0;
+}
+
+.progresscircle .progress-right .progress-circle {
+    left: -100%;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+
+.progresscircle .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    line-height: 250px;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+}
+
+.progresscircle.blue .progress-circle {
+    border-color: #EBAAFF;
+}
+
+/* //////FIN DE BARRA CIRCULAR //////////*/
+
+.menu-title {
+    color: #FFFFFF;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.main-menu.menu-light .navigation li a {
+    color: #fff;
+    line-height: 1.45;
+}
+
+.tableWallet {
+    border-collapse: collapse;
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+.page-item.active {
+    background-color: transparent;
+    border: 1px solid #EBAAFF;
+}
+
+.bordeRosado {
+    border: 1px solid #EBAAFF;
+}
+
+.cards-border {
+
+    background-color: #07081b;
+    border: 1px solid #3B4253;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.input-group>.form-control,
+.input-group>.form-select,
+.input-group-text,
+.form-check-input,
+.form-select {
+    background-color: #1d1b2f;
+    border-color: #404656;
+    color: #fff;
+}
+
+
+
+.title1 {
+    margin-left: 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.title2 {
+    margin-right: 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.msg_card_body {
+    max-height: 500px;
+    overflow-y: scroll;
+    border: 1px #EBAAFF solid;
+}
+
+.msg_cotainer {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #056162;
+    padding: 12px;
+    position: relative;
+}
+
+.msg_cotainer_send {
+    margin-top: auto;
+    font-size: 15px;
+    margin-bottom: auto;
+    border-radius: 5px;
+    margin-right: 7px;
+    color: #fff;
+    background-color: #262d31;
+    padding: 12px;
+    position: relative;
+}
+
+.msg_time {
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+}
+
+.msg_time_send {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+}
+
+
+/*GRID DASHBOARD*/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 1px;
+}
+
+.div2 {
+    grid-area: 1 / 5 / 2 / 5;
+}
+
+.div3 {
+    grid-area: 2 / 5 / 3 / 5;
+}
+
+.div4 {
+    grid-area: 3 / 5 / 4 / 5;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 4 /5;
+}
+
+/*GRID DASHBOARD END*/
+
+
+/*GRID FINANZAS START*/
+
+.Grid-Finanza {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+}
+
+.areas1 {
+    grid-area: 2 / 1 / 5 / 3;
+}
+
+.areas2 {
+    grid-area: 2 / 5 / 3 / 3;
+}
+
+.areas3 {
+    grid-area: 3 / 5 / 4 / 3;
+}
+
+.areas4 {
+    grid-area: 4 / 5 / 5 / 3;
+}
+
+.areas5 {
+    grid-area: 1 / 1 / 4 / 1;
+}
+
+.areas6 {
+    grid-area: 1 / 3 / 2 / 2;
+}
+
+.areas7 {
+    grid-area: 1 / 5 / 2 / 3;
+}
+
+/*GRID FINANZAS END*/
+
+
+.Grid-kyc {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+
+.area1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.area2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.area3 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.area4 {
+    grid-area: 1 / 2 / 4 / 3;
+}
+
+// /*GRID KYC PROFILE END*/
+
+.bg-light-rosado {
+    background: #7367F01F 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.MasterInvestor {
+    background: #7367F01F 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    width: 150px;
+    opacity: 1;
+}
+
+.file-picker {
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.file-picker+[type='file'] {
+    display: none;
+}
+
+/* COLORES */
+
+
+
+.rosado {
+    color: #EBAAFF;
+}
+
+.blue {
+    color: #3B83BD;
+}
+
+.rosadoUS {
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ebaaff);
+    text-align: center;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.borderPakage {
+    border: 1px solid #676D7D;
+}
+
+.Referral-btn {
+    border: 1px #EBAAFF solid;
+}
+
+.Referral-text {
+    border: 1px #EBAAFF solid;
+    color: #EBAAFF;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 991.98px) {
+
+    .parent,
+    .Grid-kyc,
+    .Grid-Finanza {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .MyEXCELSIOR {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+@media (max-width: 472px) {
+    .master {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+}
+
+.capa-exterior {
+    min-height: 100px;
+    position: relative;
+    border: 2px dashed #EBAAFF;
+}
+
+.capa-interior {
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #EBAAFF;
+    cursor: pointer;
+}
+
+input[type=file] {
+    display: none;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    color: #FFFFFF;
+}
+
+.freshman {
+    color: #AAFFCF !important;
+}
+
+.junior {
+    color:#AAF6FF !important;
+}
+
+.senior {
+    color:#FFE6AA !important;
+}
+
+.master {
+    color:#FFAACC !important;
+}
+
+.master-pro {
+    color:#FF8B8B !important;
+}
+
+.excelsior{
+    color:#EBAAFF !important;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+// .auth-wrapper {
+//     background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(0, 0, 0, 1) 87.1%);
+// }
+
+
+#contenedor {
+    max-width: 100%;
+    max-height: 250px;
+    border: 3px dashed #EBAAFF;
+    text-align: center;
+    padding: 2em;
+    margin: auto;
+}
+
+.upload {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#imgUpload {
+    display: none;
+}
+
+#gallery div {
+    display: inline-block;
+    text-align: center;
+
+}
+
+#gallery2 div {
+
+    display: inline-block;
+    text-align: center;
+
+}
+
+#gallery2 img {
+    max-height: 150px;
+
+}
+
+#gallery img {
+    max-height: 150px;
+
+}
+
+#gallery2 .fName {
+    color: #EBAAFF;
+    display: block;
+}
+
+#gallery .fName {
+    color: #EBAAFF;
+    display: block;
+}

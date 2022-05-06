@@ -1,0 +1,116 @@
+{
+  "menu": [
+    {
+      "name": "Dashboard",
+      "icon": "home",
+      "slug": "",
+      "url": "/"
+    },
+    {
+      "name": "Mi Perfil",
+      "icon": "user",
+      "slug": "/",
+      "submenu": [
+        {
+          "url": "/profile",
+          "name": "Información Personal",
+          "icon": "user",
+          "slug": "profile.profile"
+        },
+        {
+          "url": "/kyc",
+          "name": "Verificación KYC",
+          "icon": "circle",
+          "slug": "profile.kyc"
+        }
+      ]
+    },
+    {
+      "name": "Auditoria",
+      "icon": "sidebar",
+      "slug": "/",
+      "submenu": [
+        {
+          "url": "/red/buscar",
+          "name": "Red unilevel",
+          "icon": "circle",
+          "slug": "red.unilevel"
+        }
+      ]
+    },
+    {
+      "url": "admin/wallet",
+      "name": "Wallet",
+      "icon": "briefcase",
+      "slug": "ComponentsAdmin.wallet"
+    },
+    {
+      "url": "/ordenes",
+      "name": "Ordenes",
+      "icon": "shopping-cart",
+      "slug": ""
+    },
+    {
+      "url": "/inversiones",
+      "name": "Inversiones",
+      "icon": "dollar-sign",
+      "slug": "business.invest"
+    },
+    {
+      "url": "/comisiones",
+      "name": "Comisiones",
+      "icon": "credit-card",
+      "slug": "comisiones"
+    },
+
+    {
+      "url": "/rentabilidad",
+      "name": "Rentabilidad",
+      "icon": "more-horizontal",
+      "slug": ""
+    },
+    {
+      "url": "education",
+      "name": "Educacion",
+      "icon": "book",
+      "slug": "education.index"
+    },
+    {
+      "name": "Liquidaciones",
+      "icon": "archive",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "/liquidaciones/pendientes",
+          "name": "Pendientes",
+          "icon": "circle",
+          "slug": "dashboard-ecommerce"
+        },
+        {
+          "url": "/liquidaciones/realizadas",
+          "name": "Realizadas",
+          "icon": "circle",
+          "slug": "dashboard-ecommerce"
+        }
+      ]
+    },
+    {
+        "url": "kyc-list",
+        "name": "Kyc",
+        "icon": "list",
+        "slug": "Kyc.index"
+      },
+    {
+      "url": "/tickets/ticket-list-admin",
+      "name": "Soporte",
+      "icon": "settings",
+      "slug": ""
+    },
+    {
+      "url": "/user/user-list",
+      "name": "Usuarios",
+      "icon": "users",
+      "slug": ""
+    }
+  ]
+}

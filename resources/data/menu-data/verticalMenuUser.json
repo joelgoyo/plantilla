@@ -1,0 +1,131 @@
+{
+    "menu": [
+      {
+        "name": "Dashboard",
+        "icon": "home",
+        "slug": "",
+        "url": "/"
+      },
+      {
+        "name": "Mi Perfil",
+        "icon": "user",
+        "slug": "/",
+        "submenu": [
+          {
+            "url": "/profile",
+            "name": "Información Personal",
+            "icon": "circle",
+            "slug": "profile.profile"
+          },
+          {
+            "url": "/kyc",
+            "name": "Verificación KYC",
+            "icon": "circle",
+            "slug": "profile.kyc"
+          }
+        ]
+      },
+      {
+        "url": "/finanzas",
+        "name": "Finanzas",
+        "icon": "box",
+        "slug": "Finanzas"
+      },
+         {
+        "url": "/red/unilevel",
+        "name": "Mi Equipo",
+        "icon": "grid",
+        "slug": "red.unilevel"
+      },
+      {
+        "url": "/wallet",
+        "name": "Wallet",
+        "icon": "briefcase",
+        "slug": "app-chat"
+      },
+      {
+        "url": "/market",
+        "name": "Membrecia Investor",
+        "icon": "shopping-cart",
+        "slug": "app-chat"
+      },
+      {
+        "url": "education",
+        "name": "Educacion",
+        "icon": "book",
+        "slug": "componentUser.index"
+      },
+      {
+        "name": "Negocio",
+        "icon": "credit-card",
+        "slug": "/",
+        "submenu": [
+          {
+            "url": "/inversiones",
+            "name": "Inversiones",
+            "icon": "circle",
+            "slug": ""
+          },
+          {
+            "url": "/ordenes",
+            "name": "Órdenes",
+            "icon": "circle",
+            "slug": ""
+          },
+          {
+            "url": "/menuRentabilidad",
+            "name": "Rentabilidad",
+            "icon": "circle",
+            "slug": ""
+          }
+        ]
+      },
+      {
+        "name": "Retiros",
+        "icon": "sidebar",
+        "slug": "",
+        "submenu": [
+          {
+            "url": "/retiros",
+            "name": "Historial",
+            "icon": "circle",
+            "slug": "retiros"
+          },
+          {
+            "url": "/solicitud-retiros/",
+            "name": "Solicitud de retiro",
+            "icon": "circle",
+            "slug": ""
+          }
+        ]
+      },
+      {
+        "name": "Soporte",
+        "icon": "settings",
+        "slug": "",
+        "submenu": [
+          {
+            "url": "/tickets/ticket-list-user",
+            "name": "Tickets",
+            "icon": "circle",
+            "slug": ""
+
+          },
+          {
+            "url": "/tickets/ticket-create",
+            "name": "Inbox",
+            "icon": "circle",
+            "slug": ""
+          }
+        ]
+      }
+    ]
+  }
+
+
+
+
+
+
+
+

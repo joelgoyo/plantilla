@@ -1,0 +1,50 @@
+.form-control {
+  background-color: #1d1b2f;
+  border-color: #404656;
+  color: #fff;
+  &::placeholder {
+    transition: all 0.2s ease;
+  }
+
+  &:focus {
+    background-color: #1d1b2f;
+    border-color: #404656;
+    color: #fff;
+    &::placeholder {
+      transform: translate(5px);
+      transition: all 0.2s ease;
+    }
+    &:valid,
+    &.is-valid {
+      box-shadow: $input-focus-box-shadow;
+    }
+  }
+
+  &:disabled{
+    background-color: #1d1b2f;
+    border-color: #404656;
+    color: #404656;
+  }
+}
+
+.form-control-plaintext {
+  &:focus {
+    outline: none;
+  }
+}
+
+// Text area line height
+textarea {
+  &.form-control {
+    line-height: 1.6rem;
+    padding: 0.8rem 1rem !important;
+  }
+
+  &.form-control-sm {
+    padding: 0.4rem 0.857rem !important;
+  }
+
+  &.form-control-lg {
+    padding: 1rem 1.143rem !important;
+  }
+}
